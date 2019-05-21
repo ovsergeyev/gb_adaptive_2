@@ -1,0 +1,13 @@
+.fontface(@family, @filename: @family, @weight: normal, @style: normal) {
+  @font-face {
+    font-family: @family;
+    src: url('../fonts/@{filename}');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+.fontface('Myriad', 'Myriad-Pro-Light.ttf', 300);
+.fontface('Myriad', 'Myriad-Pro.ttf', 400);
+.fontface('Myriad', 'Myriad-Pro-Semibold.ttf', 600);
+.fontface('Myriad', 'Myriad-Pro-Black.ttf', 900);
